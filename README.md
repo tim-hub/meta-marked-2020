@@ -1,7 +1,15 @@
 ## meta-marked
 #### The [marked](http://github.com/chjj/marked) markdown processor for Node.js with support for [YAML](http://yaml.org/) metadata
 
-[![Dependency Status](https://david-dm.org/j201/meta-marked.svg)](https://david-dm.org/j201/meta-marked) [![Greenkeeper badge](https://badges.greenkeeper.io/codimd/meta-marked.svg)](https://greenkeeper.io/)
+![David](https://img.shields.io/david/codimd/meta-marked.svg) [![Greenkeeper badge](https://badges.greenkeeper.io/codimd/meta-marked.svg)](https://greenkeeper.io/)
+
+CodiMD fork of the outdated meta-marked package. Due to lack of upstream activity forking the project and maintaining it on ourselves seems to be the way to go. Due to CI integration with tests and Greenkeeper the maintenance workload should be minimal to us. Issues, suggestions and improvements are very welcome!
+
+Main goal: Keep things up-to-date and safe without breaking functionality.
+
+Not goal: Extending functionality.
+
+---
 
 Just a quick extension I needed for processing markdown in Node. Props to Christopher Jeffrey for his excellent markdown processor 'marked'.
 
