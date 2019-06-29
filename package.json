@@ -19,7 +19,7 @@
     "js-yaml": "~3.13.1"
   },
   "devDependencies": {
-    "tape": "~4.10.1"
+    "tape": "~4.11.0"
   },
   "scripts": {
     "test": "node ./test/test"
