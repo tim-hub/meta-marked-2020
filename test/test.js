@@ -3,11 +3,11 @@ const marked = require("marked");
 const tape = require("tape");
 
 tape("meta-marked", function(t) {
-  var basicTestText =
+  const basicTestText =
     "---\nTitle:   My awesome markdown file\nAuthor:  Me\nScripts:\n    - js/doStuff.js\n    - js/doMoreStuff.js\n...\n\n##Header\nRegular text and stuff goes here. \n\n...\n\n---\n";
-  var basicTestMD =
+  const basicTestMD =
     "\n\n##Header\nRegular text and stuff goes here. \n\n...\n\n---\n";
-  var basicResult = metaMarked(basicTestText);
+  const basicResult = metaMarked(basicTestText);
 
   t.ok(basicResult.meta, "result.meta exists");
   t.ok(basicResult.html, "result.html exists");
@@ -41,11 +41,25 @@ tape("meta-marked", function(t) {
 
   t.equal(metaMarked.lexer, marked.lexer, "inherits from marked");
 
-  var dashTestText = basicTestText.replace("...", "---");
+  const dashTestText = basicTestText.replace("...", "---");
   t.deepEqual(
     basicResult,
     metaMarked(dashTestText),
     "works with dashes as yaml terminators too"
+  );
+
+  const testTextWithoutDashes = basicTestText.slice(3, basicTestText.length);
+  const basicWithoutDashesResult = metaMarked(testTextWithoutDashes);
+  t.ok(basicWithoutDashesResult.meta, "result.meta exists");
+
+  t.deepEqual(
+    basicWithoutDashesResult.meta,
+    {
+      Title: "My awesome markdown file",
+      Author: "Me",
+      Scripts: ["js/doStuff.js", "js/doMoreStuff.js"]
+    },
+    "result.meta matches the yml output"
   );
 
   t.end();
