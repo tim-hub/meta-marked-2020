@@ -1,11 +1,13 @@
 # meta-marked-2020
+[![codecov](https://codecov.io/gh/tim-hub/meta-marked-2020/branch/master/graph/badge.svg)](https://codecov.io/gh/tim-hub/meta-marked-2020) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
+
 **The [marked](http://github.com/chjj/marked) markdown processor for Node.js with support for [YAML](http://yaml.org/) metadata**
 
 This is a fork of [j201/meta-marked](https://github.com/j201/meta-marked), the upstream is not maintained. 
 
 # why meta-marked-2020
 - updated dependency
-- handle hexo site markdown files (in markdown hexo generated, there is no `---` at beginning of file)
+- handle hexo markdown files (in markdown hexo generated, there is no `---` at beginning of file)
 ---
 
 Just a quick extension I needed for processing markdown in Node. Props to Christopher Jeffrey for his excellent markdown processor 'marked'.
