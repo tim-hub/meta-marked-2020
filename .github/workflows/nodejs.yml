@@ -26,7 +26,7 @@ jobs:
 
     - name: Codecov Coverage Report
       run: |
-        npm install -g codecov
+        npm install -g codecov istanbul
         istanbul cover node_modules/.bin/tape ./test/*.js
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
