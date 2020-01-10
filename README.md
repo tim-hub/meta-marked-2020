@@ -75,4 +75,4 @@ npm test
 
 ---
 
-Licensed under [the MIT License](http://opensource.org/licenses/MIT).
+Licensed under the MIT License.
