@@ -1,14 +1,11 @@
-## meta-marked
-#### The [marked](http://github.com/chjj/marked) markdown processor for Node.js with support for [YAML](http://yaml.org/) metadata
+# meta-marked-2020
+**The [marked](http://github.com/chjj/marked) markdown processor for Node.js with support for [YAML](http://yaml.org/) metadata**
 
-![David](https://img.shields.io/david/codimd/meta-marked.svg) [![Greenkeeper badge](https://badges.greenkeeper.io/codimd/meta-marked.svg)](https://greenkeeper.io/)
+This is a fork of [j201/meta-marked](https://github.com/j201/meta-marked), the upstream is not maintained. 
 
-CodiMD fork of the outdated meta-marked package. Due to lack of upstream activity forking the project and maintaining it on ourselves seems to be the way to go. Due to CI integration with tests and Greenkeeper the maintenance workload should be minimal to us. Issues, suggestions and improvements are very welcome!
-
-Main goal: Keep things up-to-date and safe without breaking functionality.
-
-Not goal: Extending functionality.
-
+# why meta-marked-2020
+- updated dependency
+- handle hexo site markdown files (in markdown hexo generated, there is no `---` at beginning of file)
 ---
 
 Just a quick extension I needed for processing markdown in Node. Props to Christopher Jeffrey for his excellent markdown processor 'marked'.
@@ -78,4 +75,4 @@ npm test
 
 ---
 
-Licensed under [the MIT License](http://opensource.org/licenses/MIT). © 2013-2014 j201
+Licensed under [the MIT License](http://opensource.org/licenses/MIT).
