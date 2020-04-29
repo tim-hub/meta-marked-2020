@@ -1,6 +1,6 @@
 {
   "name": "meta-marked-2020",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "The simplest markdown + yaml metadata processor.",
   "main": "./lib/meta-marked.js",
   "keywords": [

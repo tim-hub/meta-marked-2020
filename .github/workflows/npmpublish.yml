@@ -1,8 +1,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [tag]
+  push:
+    tags:
+      - '*'
 
 jobs:
   build:
